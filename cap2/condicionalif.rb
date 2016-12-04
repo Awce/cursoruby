@@ -1,7 +1,10 @@
-a = 2
-b = 3
+#Programa que indica la mayoría de edad con IF.
+puts  "Por favor escribe tu edad:"
+STDOUT.flush
+edad = gets.chomp.to_i
 
-if a < b
-  puts "#{a} Es Menor"
-  puts "#{b} Es Mayor"
+if edad >= 18
+  puts "Tu edad es #{edad} años, ya eres Adulto."
+elsif edad <= 18
+  puts "Tu edad es #{edad} años, eres un Niño."
 end
